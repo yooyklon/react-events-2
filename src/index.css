@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.material-icons {
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 100%;
+  color: #898989;
+  cursor: pointer;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 15px 8px rgba(34, 60, 80, 0.2);
+}
+
+.card-header, .card-bottom {
+  position: absolute;
+}
+
+.card-header {
+  top: 20px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title,
+.item-title {
+  font-size: 24px;
+}
+
+.card-color,
+.item-color {
+  color: #787575;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-bottom {
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-price,
+.item-price {
+  font-size: 25px;
+  color: #ed4e4e;
+}
+
+.card-btn,
+.item-btn {
+  padding: 5px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ed4e4e;
+  border: 2px solid #ed4e4e;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.item {
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.item + .item {
+  margin-top: 10px;
+}
+
+.item-imgbox {
+  height: 100%;
+}
+
+.item-img {
+  height: 100%;
+}
